@@ -24,3 +24,9 @@ body {
   backdrop-filter: blur(19px) saturate(180%);
   background-color: rgba(17, 25, 40, 0.75);
 }
+.loading {
+  font-size: 50px;
+  padding: 50px;
+  border-radius: 10px;
+  background: rgba(17, 25, 40, 0.9);
+}

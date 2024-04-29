@@ -54,6 +54,7 @@
     .message {
       max-width: 70%;
       display: flex;
+      flex-wrap: wrap;
       gap: 20px;
       &.own {
         align-self: flex-end;
@@ -64,9 +65,9 @@
         }
       }
       img {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
+        width: 100% !important;
+        height: 300px !important;
+        border-radius: 10px;
         object-fit: cover;
       }
       .texts {
@@ -74,12 +75,6 @@
         flex-direction: column;
         gap: 15px;
         flex: 1;
-        img {
-          width: 100%;
-          height: 300px;
-          border-radius: 10px;
-          object-fit: cover;
-        }
         p {
           background: rgba(17, 25, 40, 0.3);
           padding: 20px;
@@ -117,6 +112,9 @@
       border: none;
       outline: none;
       border-radius: 10px;
+      &:disabled {
+        cursor: not-allowed;
+      }
     }
     .emoji {
       position: relative;
@@ -134,6 +132,10 @@
       cursor: pointer;
       color: white;
       background: #5183fe;
+      &:disabled {
+        background: #5182fe88;
+        cursor: not-allowed;
+      }
     }
   }
 }
